@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import Section from "../componets/Section";
 
 const IndexPage = () => {
@@ -33,3 +34,11 @@ const IndexPage = () => {
 
 export default IndexPage;
 
+=======
+import Header from "../componets/header"
+
+const IndexPage = (){
+    return (<Header></Header>)
+}
+export default IndexPage
+>>>>>>> origin/nathaly
