@@ -3,16 +3,18 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import Header from './componets/header'
+import ContactPage from './componets/ContactPage'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <>
-      <h1 className='bg-red-500'>Hola aca empieza el restaurante</h1>
-      <Header></Header>
-
-    </>
+    <Router>
+      <Routes>
+        <Route path="/" element={<IndexPage />} />
+        <Route path="/contacto" element={<ContactPage />} />
+      </Routes>
+    </Router>
   )
 }
 
