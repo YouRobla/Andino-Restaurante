@@ -1,20 +1,19 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+// App.jsx
 import './App.css'
-import Section from './componets/Section'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import IndexPage from './pages/IndexPage'
-import Header from './componets/header'
+
+import Menu from './pages/Menu'
 
 function App() {
-
   return (
-    <>
-   <IndexPage></IndexPage>
-      <h1 className='bg-red-500'>Hola aca empieza el restaurante</h1>
-      <Header></Header>
-
-    </>
+    <Router>
+      <Routes>
+        <Route path="/" element={<IndexPage />} />
+        
+        <Route path="/menu" element={<Menu />} />
+      </Routes>
+    </Router>
   )
 }
 
