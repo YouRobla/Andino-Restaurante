@@ -1,9 +1,9 @@
-<<<<<<< HEAD
 import Section from "../componets/Section";
-
+import Header from "../componets/header"
 const IndexPage = () => {
   return (
     <>
+    <Header></Header>
       <Section
         image="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
         title="El Sabor Andino: Un Viaje Gastronómico"
@@ -34,11 +34,5 @@ const IndexPage = () => {
 
 export default IndexPage;
 
-=======
-import Header from "../componets/header"
 
-const IndexPage = (){
-    return (<Header></Header>)
-}
-export default IndexPage
->>>>>>> origin/nathaly
+
